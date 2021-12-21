@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6a6262;
+    font-family: Roboto, sans-serif;
+}
+
+.form{
+    height: 250px;
+    background-color: orange;
+    margin: 150px auto auto;
+    width: 300px;
+    border-radius: 28px;
+    text-align: center;
+    padding: 0 15px 15px 15px;
+    position: relative;
+}
+
+
+.form input[type=number]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

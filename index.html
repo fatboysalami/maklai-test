@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maklai-test</title>
+    <script>
+        function opr(){
+            const n1 = parseFloat(document.getElementById("first-num").value);
+            const n2 = parseFloat(document.getElementById("second-num").value);
+            const operation = document.getElementById("operations").value;
+            const res = document.getElementById('result');
+
+            if(operation === '+')
+            {
+                res.value = n1+n2;
+            }
+
+            if(operation === '-')
+            {
+                res.value = n1-n2;
+            }
+
+            if(operation === '/')
+            {
+                res.value = n1/n2;
+            }
+
+            if(operation === '*')
+            {
+                res.value = n1*n2;
+            }
+
+            console.log(typeof(res.value));
+            console.log(typeof(n1));
+        }
+    </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form onsubmit="return false">
+    <div class="form">
+        <label for="first-num">Первое число</label>
+        <input type="number" placeholder="Введите первое число" id="first-num" required>
+        <label for="second-num">Второе число</label>
+        <input type="number" placeholder="Введите второе число" id="second-num" required>
+        <label>Выберите операцию
+        <select id="operations">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        </label>
+        <button onclick="opr()">Результат</button>
+        <input type="number" id="result" placeholder="Результат"/>
+    </div>
+</form>
+</body>
+</html>
